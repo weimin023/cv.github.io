@@ -113,70 +113,162 @@ body,html {
     width: 100%;
 }
 
+body {
+    background-color: #000;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* 統一行高與間距 */
+li {
+  line-height: 1.6;
+  margin-bottom: 12px;  /* 控制 li 與 li 之間的距離 */
+}
+
+h1, h2 {
+    color: #5cacee; /* 藍灰色標題 */
+    font-size: 2em;
+}
+
+/* 校徽與校名 */
+.edu-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+/* 下面內容用一個容器 */
+.edu-details {
+    margin-left: calc(70px + 10px); /* 校徽寬度 + gap */
+}
+
+/* 讓內部列表不再左側縮排過多 */
+.edu-details ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.edu-details ul ul {
+    padding-left: 20px; /* 讓子列表稍微往右 */
+}
+
+.school-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    filter: brightness(1.3) drop-shadow(0 0 3px #ffffff33);
+    margin-top: 25px;  /* 可試 ± 調整 */
+    margin-bottom: 2px;
+    align-self: center;
+}
+
+/* 科系和校名間距縮小 */
+.degree {
+    color: #195b91a8;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* 校名 */
+.blue {
+    color: #195b91a8; /* 藍色，學術科技感強 */
+    font-size: 2em;
+}
+
+/* 課程分類 */
+.course-category {
+    color: #a0c8e2; /* 灰白分類，降低喧賓奪主 */
+}
+
+/* 內容主體 */
+.education-entry {
+    color: #e0e0e0; /* 主文亮灰色，易讀且耐看 */
+}
+
+/* Keywords / Highlight */
+.highlight {
+    color: #00ffff; /* Neon Cyan，高對比強焦點 */
+    font-weight: bold;
+}
+
+.red {
+    color: #f08080;
+    font-weight: bold;
+}
+
 .education-entry {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.education-entry h2 {
-    color: #a0c8e2;
+    margin-bottom: 2rem;
+    border-left: 2px solid #5cacee;
+    padding-left: 1rem;
+    align-items: flex-start;
 }
 
 .edu-left {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .edu-right {
-    text-align: right;
-    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     padding-left: 20px;
     color: #a0c8e2;
     font-style: italic;
     font-size: 0.9em;
+    line-height: 1.4;
+    margin-top: 4px;
 }
-
 .company-entry {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.company-entry ul li {
-  margin: 8px 0;
-  line-height: 1.6
-}
-
-.company-entry h2 {
-    color: #68aedd;
+    margin-bottom: 2rem;
+    border-left: 2px solid #5cacee;
+    padding-left: 1rem;
+    align-items: flex-start;
 }
 
 .company-left {
     flex: 1;
+    color: #dddddd;
 }
 
-.company-left p {
-    padding:5px 0px;
-    border-bottom:4px solid #68aedd;
-    width:15%;
+.company-left h2 {
+    color: #5cacee;
+    margin-bottom: 0.2rem;
+}
+
+.company-left ul {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.company-left li {
+    margin-bottom: 0.4rem;
+}
+
+.company-left strong {
+    color: #a0c8e2;
 }
 
 .company-right {
-    text-align: right;
-    white-space: nowrap;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     color: #a0c8e2;
     font-style: italic;
     font-size: 0.9em;
+    line-height: 1.4;
+    margin-top: 4px;
 }
 
 .education-entry h2 {
     font-weight: bold;
     margin-bottom: 5px;
-}
-
-.education-entry p {
-    color: #a0c8e2;
 }
 
 .education-entry ul {
