@@ -144,7 +144,7 @@ li {
     border-left: 2px solid #5cacee;
     align-items: flex-start;
 }
-.education-entry { border-color: #e0e0e0; }
+.education-entry { border-color: #5cacee; }
 
 /* 左右欄位配置 */
 .edu-left, .company-left {
@@ -223,7 +223,12 @@ li {
 
 /* 關鍵字高亮 */
 .highlight {
-    color: #00bcd4;
+    color: #6a7a7c;
+    font-weight: bold;
+}
+
+.itemtitle, .course-category {
+    color: #2861cc;
     font-weight: bold;
 }
 
@@ -269,6 +274,13 @@ li {
     color:#0077cc;
     cursor:pointer;
 }
+.skills-section {
+    border-left: 2px solid #5cacee;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+    
 #photos {
     width:100%;
     columns:3;
@@ -389,6 +401,8 @@ li {
     transform: scale(1.2);
     filter: drop-shadow(0 0 6px #00ffff); /* 無偏移、圓形 Glow */
 }
+
+
 @media (max-width: 900px){
     #header {
         width:94%;
